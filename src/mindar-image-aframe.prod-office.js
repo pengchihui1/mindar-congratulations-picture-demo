@@ -89,10 +89,10 @@ AFRAME.registerSystem('mindar-image-system', {
       audio: false, video: {
         facingMode: 'environment',
         frameRate: { ideal: 30, max: 60 },
+        // width: { min: 320, ideal: 480, max: 800 },
+        // height: { min: 320 * aspect, ideal: 480 * aspect, max: 800 * aspect },
         // height: { min: 320, ideal: 480, max: 800 },
-        // width: { min: 320 * aspect, ideal: 900, max: 800 * aspect },
-        // width: { min: 320, ideal: 500, max: 1920 },
-        // height: { min: 320, ideal: 1000, max: 1080 }
+        // width: { min: 320 * aspect, ideal: 480 * aspect, max: 800 * aspect },
       }
     }).then((stream) => {
       this.video.addEventListener('loadedmetadata', () => {
